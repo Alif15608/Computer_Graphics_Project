@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1648959386 source:c:\users\asus\downloads\7\comuter graphics\project\traffic view in a city\main.cpp
+1649405864 source:c:\users\asus\downloads\7\comuter graphics\project\traffic view in a city\main.cpp
 	<windows.h>
 	<iostream>
 	<GL/glut.h>
