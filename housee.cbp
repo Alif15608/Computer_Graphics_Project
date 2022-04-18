@@ -1,0 +1,356 @@
+
+#include <windows.h>  // for MS Windows
+#include <iostream>
+#include <GL/glut.h>
+#include <math.h>>
+using namespace std;
+[10:59 PM] MD. ASHRAFUL HOSSAIN ALIF
+void shop() {
+// left shop start
+glBegin(GL_POLYGON); // body
+glColor3ub(255, 255, 255);
+glVertex2f(-1.95f, 0.5f);
+glVertex2f(-1.95f, 0.75f);
+glVertex2f(-1.55f, 0.75f);
+glVertex2f(-1.55f, 0.5f);
+glEnd();
+glBegin(GL_POLYGON); // roof
+glColor3ub(128, 0, 0);
+glVertex2f(-1.95f, 0.75f);
+glVertex2f(-1.95f, 0.85f);
+glVertex2f(-1.55f, 0.85f);
+glVertex2f(-1.55f, 0.75f);
+glEnd(); glBegin(GL_POLYGON); // shelter
+glColor3ub(255, 0, 0);
+glVertex2f(-2.0f, 0.65f);
+glVertex2f(-1.5f, 0.65f);
+glVertex2f(-1.5f, 0.7f);
+glVertex2f(-1.55f, 0.75f);
+glVertex2f(-1.95f, 0.75f);
+glVertex2f(-2.0f, 0.7f);
+glEnd(); glBegin(GL_POLYGON); // door
+glColor3ub(0, 230, 230);
+glVertex2f(-1.9f, 0.5f);
+glVertex2f(-1.9f, 0.62f);
+glColor3ub(0, 153, 153);
+glVertex2f(-1.82f, 0.62f);
+glVertex2f(-1.82f, 0.5f);
+glEnd(); glBegin(GL_POLYGON); // window
+glColor3ub(0, 230, 230);
+glVertex2f(-1.77f, 0.55f);
+glVertex2f(-1.77f, 0.62f);
+glColor3ub(0, 153, 153);
+glVertex2f(-1.6f, 0.62f);
+glVertex2f(-1.6f, 0.55f);
+glEnd(); glBegin(GL_LINES);
+glColor3ub(128, 0, 0);
+glVertex2f(-1.52f, 0.5f);
+glVertex2f(-1.98f, 0.5f); glVertex2f(-1.524f, 0.504f);
+glVertex2f(-1.98f, 0.504f); glVertex2f(-1.9f, 0.5f); // door
+glVertex2f(-1.9f, 0.62f); glVertex2f(-1.9f, 0.62f);
+glVertex2f(-1.82f, 0.62f); glVertex2f(-1.82f, 0.62f);
+glVertex2f(-1.82f, 0.5f); glVertex2f(-1.82f, 0.5f);
+glVertex2f(-1.9f, 0.5f); glVertex2f(-1.82f, 0.55f);
+glVertex2f(-1.9f, 0.55f); glVertex2f(-1.77f, 0.55f); // window
+glVertex2f(-1.77f, 0.62f); glVertex2f(-1.77f, 0.62f);
+glVertex2f(-1.6f, 0.62f); glVertex2f(-1.6f, 0.62f);
+glVertex2f(-1.6f, 0.55f); glVertex2f(-1.6f, 0.55f);
+glVertex2f(-1.77f, 0.55f);
+glEnd(); glColor3f(1.0, 1.0, 1.0);
+c="BFC";
+glRasterPos2f(-1.8 , 0.78);
+for(int i = 0; c[i] !='\0'; i++)
+glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c[i]);
+// left shop end // right shop start
+glBegin(GL_POLYGON); // body
+glColor3ub(255, 204, 102);
+glVertex2f(-0.75f, 0.5f);
+glVertex2f(-0.75f, 0.8f);
+glVertex2f(-0.2f, 0.8f);
+glVertex2f(-0.2f, 0.5f);
+glEnd(); glBegin(GL_POLYGON); // roof
+glColor3ub(179, 89, 0);
+glVertex2f(-0.75f, 0.85f);
+glVertex2f(-0.75f, 0.8f);
+glVertex2f(-0.2f, 0.8f);
+glVertex2f(-0.2f, 0.85f);
+glEnd();
+glBegin(GL_POLYGON); // roof
+glColor3ub(179, 89, 0);
+glVertex2f(-0.3f, 0.85f);
+glVertex2f(-0.35f, 0.9f);
+glVertex2f(-0.6f, 0.9f);
+glVertex2f(-0.66f, 0.85f);
+glEnd(); glBegin(GL_POLYGON); // inside
+glColor3ub(77, 38, 0);
+glVertex2f(-0.73f, 0.6f);
+glVertex2f(-0.73f, 0.75f);
+glVertex2f(-0.22f, 0.75f);
+glVertex2f(-0.22f, 0.6f);
+glEnd(); glBegin(GL_POLYGON); // product
+glColor3ub(255, 0, 0);
+glVertex2f(-0.7f, 0.6f);
+glVertex2f(-0.7f, 0.65f);
+glVertex2f(-0.6f, 0.65f);
+glVertex2f(-0.6f, 0.6f);
+glEnd();
+glBegin(GL_POLYGON); // product
+glColor3ub(255, 204, 102);
+glVertex2f(-0.65f, 0.65f);
+glVertex2f(-0.65f, 0.68f);
+glVertex2f(-0.6f, 0.68f);
+glVertex2f(-0.6f, 0.65f);
+glEnd();
+glBegin(GL_POLYGON); // product
+glColor3ub(255, 204, 102);
+glVertex2f(-0.55f, 0.6f);
+glVertex2f(-0.55f, 0.65f);
+glVertex2f(-0.45f, 0.65f);
+glVertex2f(-0.45f, 0.6f);
+glEnd();
+glBegin(GL_POLYGON); // product
+glColor3ub(204, 0, 102);
+glVertex2f(-0.4f, 0.6f);
+glVertex2f(-0.4f, 0.65f);
+glVertex2f(-0.35f, 0.6f);
+glVertex2f(-0.35f, 0.65f);
+glEnd();
+glBegin(GL_POLYGON); // product
+glColor3ub(255, 204, 102);
+glVertex2f(-0.34f, 0.6f);
+glVertex2f(-0.34f, 0.66f);
+glVertex2f(-0.3f, 0.6f);
+glVertex2f(-0.3f, 0.66f);
+glEnd(); glBegin(GL_POLYGON); // table
+glColor3ub(128, 64, 0);
+glVertex2f(-0.73f, 0.5f);
+glVertex2f(-0.73f, 0.6f);
+glVertex2f(-0.22f, 0.6f);
+glVertex2f(-0.22f, 0.5f);
+glEnd(); glBegin(GL_POLYGON); // shelter
+glColor3ub(230, 115, 0);
+glVertex2f(-0.8f, 0.7f);
+glVertex2f(-0.15f, 0.7f);
+glVertex2f(-0.15f, 0.75f);
+glVertex2f(-0.2f, 0.8f);
+glVertex2f(-0.75f, 0.8f);
+glVertex2f(-0.8f, 0.75f);
+glEnd(); glBegin(GL_LINES);
+glColor3ub(128, 0, 0);
+glVertex2f(-0.17f, 0.5f);
+glVertex2f(-0.77f, 0.5f); glVertex2f(-0.17f, 0.504f);
+glVertex2f(-0.77f, 0.504f); glColor3ub(255, 153, 51);
+glVertex2f(-0.73f, 0.6f);
+glVertex2f(-0.22f, 0.6f);
+glEnd(); glColor3ub(255, 255, 0);
+c="Candy Shop";
+glRasterPos2f(-0.6 , 0.84);
+for(int i = 0; c[i] !='\0'; i++)
+glutBitmapCharacter(GLUT_BITMAP_9_BY_15, c[i]);
+// right shop end
+}void house() {
+// left house start
+glBegin(GL_POLYGON); // body
+glColor3ub(224, 228, 231);
+glVertex2f(-1.4f, 0.5f);
+glVertex2f(-1.4f, 1.0f);
+glVertex2f(-0.9f, 1.0f);
+glVertex2f(-0.9f, 0.5f);
+glEnd(); glBegin(GL_POLYGON); // bottom-window 1
+glColor3ub(179, 230, 255);
+glVertex2f(-1.35f, 0.55f);
+glVertex2f(-1.35f, 0.65f);
+glColor3ub(0, 230, 230);
+glVertex2f(-1.25f, 0.65f);
+glVertex2f(-1.25f, 0.55f);
+glEnd();
+glBegin(GL_POLYGON); // bottom-window 2
+glColor3ub(179, 230, 255);
+glVertex2f(-1.05f, 0.55f);
+glVertex2f(-1.05f, 0.65f);
+glColor3ub(0, 230, 230);
+glVertex2f(-0.95f, 0.65f);
+glVertex2f(-0.95f, 0.55f);
+glEnd(); glBegin(GL_POLYGON); // top-window 1
+glColor3ub(179, 230, 255);
+glVertex2f(-1.35f, 0.85f);
+glVertex2f(-1.35f, 0.95f);
+glColor3ub(0, 230, 230);
+glVertex2f(-1.25f, 0.95f);
+glVertex2f(-1.25f, 0.85f);
+glEnd();
+glBegin(GL_POLYGON); // top-window 2
+glColor3ub(179, 230, 255);
+glVertex2f(-1.2f, 0.85f);
+glVertex2f(-1.2f, 0.95f);
+glColor3ub(0, 230, 230);
+glVertex2f(-1.1f, 0.95f);
+glVertex2f(-1.1f, 0.85f);
+glEnd();
+glBegin(GL_POLYGON); // top-window 3
+glColor3ub(179, 230, 255);
+glVertex2f(-1.05f, 0.85f);
+glVertex2f(-1.05f, 0.95f);
+glColor3ub(0, 230, 230);
+glVertex2f(-0.95f, 0.95f);
+glVertex2f(-0.95f, 0.85f);
+glEnd(); glBegin(GL_POLYGON); // door
+glColor3ub(153, 153, 153);
+glVertex2f(-1.2f, 0.5f);
+glVertex2f(-1.2f, 0.65f);
+glVertex2f(-1.1f, 0.65f);
+glVertex2f(-1.1f, 0.5f);
+glEnd(); glPointSize(5.0); // door handle
+glBegin(GL_POINTS);
+glColor3f(1.0f, 1.0f, 1.0f);
+glVertex2f(-1.17f, 0.58f);
+glEnd(); glBegin(GL_LINES);
+glColor3ub(77, 195, 255);
+glVertex2f(-1.35f, 0.55f); // bottom-window 1
+glVertex2f(-1.35f, 0.65f); glVertex2f(-1.35f, 0.65f);
+glVertex2f(-1.25f, 0.65f); glVertex2f(-1.25f, 0.65f);
+glVertex2f(-1.25f, 0.55f); glVertex2f(-1.25f, 0.55f);
+glVertex2f(-1.35f, 0.55f); glVertex2f(-1.25f, 0.6f);
+glVertex2f(-1.35f, 0.6f); glVertex2f(-1.05f, 0.55f); // bottom-window 2
+glVertex2f(-1.05f, 0.65f); glVertex2f(-1.05f, 0.65f);
+glVertex2f(-0.95f, 0.65f); glVertex2f(-0.95f, 0.65f);
+glVertex2f(-0.95f, 0.55f); glVertex2f(-0.95f, 0.55f);
+glVertex2f(-1.05f, 0.55f); glVertex2f(-0.95f, 0.6f);
+glVertex2f(-1.05f, 0.6f); glVertex2f(-1.35f, 0.85f); // top-window 1
+glVertex2f(-1.35f, 0.95f); glVertex2f(-1.35f, 0.95f);
+glVertex2f(-1.25f, 0.95f); glVertex2f(-1.25f, 0.95f);
+glVertex2f(-1.25f, 0.85f); glVertex2f(-1.25f, 0.85f);
+glVertex2f(-1.35f, 0.85f); glVertex2f(-1.25f, 0.9f);
+glVertex2f(-1.35f, 0.9f); glVertex2f(-1.2f, 0.85f); // top-window 2
+glVertex2f(-1.2f, 0.95f); glVertex2f(-1.2f, 0.95f);
+glVertex2f(-1.1f, 0.95f); glVertex2f(-1.1f, 0.95f);
+glVertex2f(-1.1f, 0.85f); glVertex2f(-1.1f, 0.85f);
+glVertex2f(-1.2f, 0.85f); glVertex2f(-1.1f, 0.9f);
+glVertex2f(-1.2f, 0.9f); glVertex2f(-1.05f, 0.85f); // top-window 3
+glVertex2f(-1.05f, 0.95f); glVertex2f(-1.05f, 0.95f);
+glVertex2f(-0.95f, 0.95f); glVertex2f(-0.95f, 0.95f);
+glVertex2f(-0.95f, 0.85f); glVertex2f(-0.95f, 0.85f);
+glVertex2f(-1.05f, 0.85f); glVertex2f(-0.95f, 0.9f);
+glVertex2f(-1.05f, 0.9f); glVertex2f(-1.2f, 0.5f); // door
+glVertex2f(-1.2f, 0.65f); glVertex2f(-1.2f, 0.65f);
+glVertex2f(-1.1f, 0.65f); glVertex2f(-1.1f, 0.65f);
+glVertex2f(-1.1f, 0.5f); glVertex2f(-1.1f, 0.5f);
+glVertex2f(-1.2f, 0.5f); // body
+glColor3ub(128, 128, 128); glVertex2f(-1.4f, 0.5f);
+glVertex2f(-1.4f, 1.0f); glVertex2f(-1.4f, 1.0f);
+glVertex2f(-0.9f, 1.0f); glVertex2f(-0.9f, 1.0f);
+glVertex2f(-0.9f, 0.5f); glColor3ub(128, 0, 0);
+glVertex2f(-0.87f, 0.5f);
+glVertex2f(-1.43f, 0.5f); glVertex2f(-0.87f, 0.504f);
+glVertex2f(-1.43f, 0.504f);
+glEnd(); glBegin(GL_POLYGON); // shelter
+glColor3ub(76, 174, 218);
+glVertex2f(-1.4f, 0.8f);
+glVertex2f(-1.45f, 0.75f);
+glVertex2f(-1.45f, 0.7f);
+glVertex2f(-0.85f, 0.7f);
+glVertex2f(-0.85f, 0.75f);
+glVertex2f(-0.9f, 0.8f);
+glEnd(); glBegin(GL_LINES);
+glColor3ub(128, 128, 128);
+glVertex2f(-1.4f, 0.8f);
+glVertex2f(-1.45f, 0.75f); glVertex2f(-1.45f, 0.75f);
+glVertex2f(-1.45f, 0.7f); glVertex2f(-1.45f, 0.7f);
+glVertex2f(-0.85f, 0.7f); glVertex2f(-0.85f, 0.7f);
+glVertex2f(-0.85f, 0.75f); glVertex2f(-0.85f, 0.75f);
+glVertex2f(-0.9f, 0.8f); glVertex2f(-0.9f, 0.8f);
+glVertex2f(-1.4f, 0.8f);
+glEnd();
+// left house end // right house start
+glBegin(GL_POLYGON); // body
+glColor3ub(153, 51, 0);
+glVertex2f(-0.15f, 0.5f);
+glVertex2f(-0.15f, 0.8f);
+glVertex2f(0.35f, 0.8f);
+glVertex2f(0.35f, 0.5f);
+glEnd();
+glBegin(GL_POLYGON); // store room
+glColor3ub(153, 51, 0);
+glVertex2f(0.05f, 0.8f);
+glVertex2f(0.05f, 0.99f);
+glVertex2f(0.35f, 0.99f);
+glVertex2f(0.35f, 0.8f);
+glEnd(); glBegin(GL_POLYGON); // window 1
+glColor3ub(77, 184, 255);
+glVertex2f(0.05f, 0.6f);
+glVertex2f(0.05f, 0.7f);
+glColor3ub(26, 140, 255);
+glVertex2f(0.15f, 0.7f);
+glVertex2f(0.15f, 0.6f);
+glEnd(); glBegin(GL_POLYGON); // window 2
+glColor3ub(77, 184, 255);
+glVertex2f(0.2f, 0.6f);
+glVertex2f(0.2f, 0.7f);
+glColor3ub(26, 140, 255);
+glVertex2f(0.3f, 0.7f);
+glVertex2f(0.3f, 0.6f);
+glEnd(); glBegin(GL_POLYGON); // store room window
+glColor3ub(77, 184, 255);
+glVertex2f(0.15f, 0.85f);
+glVertex2f(0.15f, 0.95f);
+glColor3ub(26, 140, 255);
+glVertex2f(0.25f, 0.95f);
+glVertex2f(0.25f, 0.85f);
+glEnd(); glBegin(GL_POLYGON); // door
+glColor3ub(77, 77, 77);
+glVertex2f(-0.1f, 0.5f);
+glVertex2f(-0.1f, 0.65f);
+glVertex2f(0.0f, 0.65f);
+glVertex2f(0.0f, 0.5f);
+glEnd(); glPointSize(5.0); // door handle
+glBegin(GL_POINTS);
+glColor3f(1.0f, 1.0f, 1.0f);
+glVertex2f(-0.03f, 0.6f);
+glEnd(); glBegin(GL_POLYGON); // door shelter
+glColor3ub(230, 115, 0);
+glVertex2f(0.02f, 0.65f);
+glVertex2f(-0.05f, 0.7f);
+glVertex2f(-0.12f, 0.65f);
+glEnd(); glBegin(GL_LINES);
+glColor3ub(255, 255, 255);
+glVertex2f(0.15f, 0.85f); // store room window
+glVertex2f(0.15f, 0.95f); glVertex2f(0.15f, 0.95f);
+glVertex2f(0.25f, 0.95f); glVertex2f(0.25f, 0.95f);
+glVertex2f(0.25f, 0.85f); glVertex2f(0.25f, 0.85f);
+glVertex2f(0.15f, 0.85f); glVertex2f(0.05f, 0.6f); // window 1
+glVertex2f(0.05f, 0.7f); glVertex2f(0.05f, 0.7f);
+glVertex2f(0.15f, 0.7f); glVertex2f(0.15f, 0.7f);
+glVertex2f(0.15f, 0.6f); glVertex2f(0.15f, 0.6f);
+glVertex2f(0.05f, 0.6f); glVertex2f(0.2f, 0.6f); // window 2
+glVertex2f(0.2f, 0.7f); glVertex2f(0.2f, 0.7f);
+glVertex2f(0.3f, 0.7f); glVertex2f(0.3f, 0.7f);
+glVertex2f(0.3f, 0.6f); glVertex2f(0.3f, 0.6f);
+glVertex2f(0.2f, 0.6f); glColor3ub(255, 153, 51);
+glVertex2f(-0.1f, 0.5f); // door
+glVertex2f(-0.1f, 0.65f); glVertex2f(-0.1f, 0.65f);
+glVertex2f(0.0f, 0.65f); glVertex2f(0.0f, 0.65f);
+glVertex2f(0.0f, 0.5f); glVertex2f(0.0f, 0.5f);
+glVertex2f(-0.1f, 0.5f); glVertex2f(0.02f, 0.65f); // door shelter
+glVertex2f(-0.05f, 0.7f); glVertex2f(-0.05f, 0.7f);
+glVertex2f(-0.12f, 0.65f); glVertex2f(-0.12f, 0.65f);
+glVertex2f(0.02f, 0.65f); glVertex2f(0.36f, 0.8f); // roof railing
+glVertex2f(-0.16f, 0.8f); glVertex2f(0.36f, 0.84f);
+glVertex2f(-0.16f, 0.84f); glVertex2f(-0.14f, 0.8f);
+glVertex2f(-0.14f, 0.84f); glVertex2f(-0.1f, 0.8f);
+glVertex2f(-0.1f, 0.84f); glVertex2f(-0.05f, 0.8f);
+glVertex2f(-0.05f, 0.84f); glVertex2f(-0.0f, 0.8f);
+glVertex2f(-0.0f, 0.84f); glVertex2f(0.05f, 0.8f);
+glVertex2f(0.05f, 0.84f); glVertex2f(0.1f, 0.8f);
+glVertex2f(0.1f, 0.84f); glVertex2f(0.15f, 0.8f);
+glVertex2f(0.15f, 0.84f); glVertex2f(0.2f, 0.8f);
+glVertex2f(0.2f, 0.84f); glVertex2f(0.25f, 0.8f);
+glVertex2f(0.25f, 0.84f); glVertex2f(0.3f, 0.8f);
+glVertex2f(0.3f, 0.84f); glVertex2f(0.35f, 0.8f);
+glVertex2f(0.35f, 0.84f); glVertex2f(-0.16f, 0.504f); // ground
+glVertex2f(0.36f, 0.504f); glVertex2f(-0.16f, 0.5f);
+glVertex2f(0.36f, 0.5f); glVertex2f(0.04f, 0.99f); // top roof
+glVertex2f(0.36f, 0.99f); glVertex2f(0.04f, 0.985f);
+glVertex2f(0.36f, 0.985f);
+glEnd(); // right house end
+}
+
